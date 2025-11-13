@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Lahari | Software Engineer</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Set Inter font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Subtly changing pale blue gradient for "beach waves" effect */
+            background: linear-gradient(135deg, #e0f7fa 0%, #f3feff 50%, #e0f7fa 100%);
+            background-attachment: fixed;
+        }
+        .header-bg {
+            background-color: #065f46; /* Deep Dark Green (Emerald 800) */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="header-bg shadow-xl sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center text-white">
+            
+            <!-- NEW TOP LEFT: Icons for Interests - Now clickable links! -->
+            <!-- EMOJI ICONS: Book (Reading) and Music Notes (Art/Museum) -->
+            <a href="#projects" class="text-2xl space-x-2 flex items-center hover:text-emerald-200 transition duration-300">
+                <span role="img" aria-label="Book">📖</span>
+                <span role="img" aria-label="Music Notes">🎵</span>
+            </a>
+            
+            <!-- TOP RIGHT: Navigation Links (maintained position due to justify-between) -->
+            <nav class="space-x-4 flex items-center">
+                <a href="#experience" class="hover:text-emerald-200 transition duration-300 font-medium">Experience</a>
+                <a href="#skills" class="hover:text-emerald-200 transition duration-300 font-medium">Skills</a>
+                <a href="#projects" class="hover:text-emerald-200 transition duration-300 font-medium">Projects</a>
+                <a href="#contact" class="hover:text-emerald-200 transition duration-300 font-medium">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section (Clean and Direct) -->
+    <section id="hero" class="bg-white py-20 md:py-24 shadow-inner">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-6xl font-black mb-3 text-gray-900">Sri Lahari</h2>
+            <h3 class="text-2xl font-semibold mb-6 text-gray-600">
+                Software Engineer | Building Scalable Data & ML Architectures
+            </h3>
+            <div class="mt-8 space-x-4">
+                <a href="https://www.linkedin.com/in/sri-lahari-6a63ab23a/" target="_blank" class="inline-flex items-center bg-emerald-600 text-white hover:bg-emerald-700 py-2.5 px-6 rounded-lg font-semibold transition duration-300 shadow-md">
+                    LinkedIn
+                </a>
+                <a href="https://github.com/Laharik02" target="_blank" class="inline-flex items-center border border-gray-400 text-gray-700 hover:bg-gray-100 py-2.5 px-6 rounded-lg font-semibold transition duration-300">
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section (New) -->
+    <section id="education" class="py-16 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl font-bold text-center text-gray-900 mb-12 border-b-4 border-emerald-500 pb-2">Education</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Degree 1 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md border-l-4 border-emerald-500">
+                    <h4 class="text-xl font-bold text-gray-800">M.S. in Data Science</h4>
+                    <p class="text-lg text-gray-600">University of Texas at Arlington</p>
+                    <p class="text-sm text-gray-500 mt-2">Relevant Coursework: Probabilities & Statistics, Data Science, Big Data Systems, Machine Learning, Data Visualization.</p>
+                </div>
+                <!-- Degree 2 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md border-l-4 border-emerald-500">
+                    <h4 class="text-xl font-bold text-gray-800">M.S. in Computer Science</h4>
+                    <p class="text-lg text-gray-600">University of Memphis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section (Structured Lists) -->
+    <section id="experience" class="py-16 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl font-bold text-center text-gray-900 mb-12 border-b-4 border-emerald-500 pb-2">Professional Experience</h3>
+
+            <!-- E-commerce Experience -->
+            <div class="bg-white p-8 rounded-xl shadow-lg mb-8 border-t-8 border-emerald-500">
+                <h4 class="text-2xl font-bold text-gray-800 mb-2">Software Developer E-commerce(Payments Systems) - Mar 2022 – Oct 2024</h4>
+                <ul class="list-disc ml-6 space-y-3 text-gray-700">
+                    <li>Architected and led the technical migration from a monolithic Java stack to a Java (Spring Boot 3) and Python/FastAPI microservices architecture for multi-tender transactional systems (CC, EBT, PayPal), resulting in a 40% improvement in system stability and uptime.</li>
+                    <li>Optimized high-volume data persistence across DynamoDB and PostgreSQL. Developed complex SQL procedures and a fault-tolerant Accumulator & Reprocessing Engine using Kafka/SQS to handle 10K+ transactions/minute and improve authorization speed by 30% during peak loads.</li>
+                    <li>Drove operational excellence and feature velocity by leveraging Docker/Kubernetes (K8s) and AWS for orchestration, reducing deployment errors by 50%. Executed critical incident response using Elasticsearch/Kibana to enhance system throughput by 35% and accelerated feature rollouts by 40% via feature-flag system.</li>
+                </ul>
+            </div>
+
+            <!-- Research Engineer Experience (New) -->
+            <div class="bg-white p-8 rounded-xl shadow-lg mb-8 border-t-8 border-emerald-500">
+                <h4 class="text-2xl font-bold text-gray-800 mb-2">Research Engineer, University of Memphis - Oct 2020 – Dec 2021</h4>
+                <ul class="list-disc ml-6 space-y-3 text-gray-700">
+                    <li>Developed a robust backend system using Java and Active Record to manage and efficiently query large-scale spatial-temporal traffic accident datasets (NYC, LA, Boston).</li>
+                    <li>Designed and built RESTful APIs using Java to enable data processing, integrating specialized algorithms for Change Point Detection and Kernel Density Estimation (KDE).</li>
+                    <li>Optimized analytical speed and accuracy by leveraging Java's advanced data structures (Hashmaps and Trees) for rapid computation of statistical measures on extensive traffic data, integrating with external sources like Google Community Mobility Reports.</li>
+                </ul>
+            </div>
+
+            <!-- Junior Developer Experience -->
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h4 class="text-2xl font-bold text-gray-800 mb-2">Software Developer (Junior) - Jan 2018 – Aug 2019</h4>
+                <ul class="list-disc ml-6 space-y-3 text-gray-700">
+                    <li>Engineered and delivered three core back-end microservices, including a Request for Proposal (RFP) API, utilizing Java 8 and Spring Boot. Optimized processing logic using the Java 8 Stream API to achieve an estimated 15% reduction in execution time for critical bulk data operations.</li>
+                    <li>Contributed to full-stack development by designing and implementing five responsive UI modules using Angular (v9/v8), HTML, and CSS, leveraging component-based architecture to increase code reusability by 20% and ensure seamless integration with back-end REST APIs.</li>
+                    <li>Executed key tasks during a successful infrastructure migration from on-premises to Azure, utilizing Azure Site Recovery and Database Migration Service. Streamlined deployment by containerizing core microservices using Docker across Azure and AWS EC2 environments.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section (Updated Structure) -->
+    <section id="skills" class="py-16 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl font-bold text-center text-gray-900 mb-12 border-b-4 border-emerald-500 pb-2">Technical Core Competencies</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                
+                <!-- Category 1: Backend & Core -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md border-l-4 border-emerald-500">
+                    <h4 class="text-xl font-bold mb-2 text-emerald-700">Backend & Core</h4>
+                    <ul class="list-none text-gray-700 space-y-1">
+                        <li>Java (JDK 17+/8)</li>
+                        <li>Spring Boot 3</li>
+                        <li>Python, FastAPI</li>
+                        <li>RESTful APIs, Swagger</li>
+                    </ul>
+                </div>
+
+                <!-- Category 2: Data & Cloud (New Consolidation) -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md border-l-4 border-emerald-500">
+                    <h4 class="text-xl font-bold mb-2 text-emerald-700">Data & Cloud</h4>
+                    <ul class="list-none text-gray-700 space-y-1">
+                        <li>AWS Cloud Practitioner Certified</li>
+                        <li>AWS (EC2, S3, ELB), Azure</li>
+                        <li>PostgreSQL, DynamoDB (NoSQL)</li>
+                        <li>Kafka, SQS (Messaging)</li>
+                    </ul>
+                </div>
+
+                <!-- Category 3: DevOps & Observability (New Consolidation) -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md border-l-4 border-emerald-500">
+                    <h4 class="text-xl font-bold mb-2 text-emerald-700">DevOps & Observability</h4>
+                    <ul class="list-none text-gray-700 space-y-1">
+                        <li>Docker, Kubernetes (K8s)</li>
+                        <li>CI/CD (Jenkins), Terraform</li>
+                        <li>Elasticsearch, Kibana, Grafana</li>
+                        <li>Git/GitHub</li>
+                    </ul>
+                </div>
+                
+                <!-- Category 4: ML & Frontend (Updated Content) -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md border-l-4 border-emerald-500">
+                    <h4 class="text-xl font-bold mb-2 text-emerald-700">ML & Frontend</h4>
+                    <ul class="list-none text-gray-700 space-y-1">
+                        <li>Probabilities & Statistics</li>
+                        <li>Big Data, Data Visualization</li>
+                        <li>Machine Learning</li>
+                        <li>Angular (v9/v8), HTML, CSS, JS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section (Updated with new content) -->
+    <section id="projects" class="py-16 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl font-bold text-center text-gray-900 mb-12 border-b-4 border-emerald-500 pb-2">Key Projects & Research</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project Card 1: HR Analytics Platform -->
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition duration-300 border-t-4 border-emerald-600">
+                    <h4 class="text-xl font-bold mb-2 text-gray-900">HR Analytics Platform for Performance Evaluation</h4>
+                    <p class="text-emerald-600 font-medium text-sm mb-3">Java, Spring Boot, Python, Airflow, SQL/Oracle</p>
+                    <p class="text-gray-700 text-sm">Designed Java/Spring Boot backend for CRUD and employee tracking (100K+ records). Engineered ETL workflows using Python/Apache Airflow, optimizing SQL/Hibernate for complex queries and enabling real-time Power BI dashboards with sub-200ms latency.</p>
+                </div>
+                
+                <!-- Project Card 2: Healthcare Federated Learning -->
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition duration-300 border-t-4 border-emerald-600">
+                    <h4 class="text-xl font-bold mb-2 text-gray-900">Healthcare Federated Learning Project (M.S.)</h4>
+                    <p class="text-emerald-600 font-medium text-sm mb-3">PyTorch, Bio Clinical BERT, Fed Avg/Prox, INT8 Quantization</p>
+                    <p class="text-gray-700 text-sm">Architected a Federated Averaging (Fed Avg) pipeline using Bio Clinical BERT for clinical text classification across 5 non-IID clients. Implemented Fed Prox regularization and INT8 Quantization to stabilize convergence and significantly reduce model communication cost.</p>
+                </div>
+                
+                <!-- Project Card 3: Research Publication -->
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition duration-300 border-t-4 border-emerald-600">
+                    <h4 class="text-xl font-bold mb-2 text-gray-900">Research Publication: COVID-19 Traffic Safety</h4>
+                    <p class="text-emerald-600 font-medium text-sm mb-3">Python, KDE, Change Point Detection, Geospatial Data</p>
+                    <p class="text-gray-700 text-sm">Published research analyzing the pandemic's impact on road safety in NYC, LA, and Boston. Utilized Kernel Density Estimation (KDE) and statistical tests to identify and quantify shifts in accident hotspots and patterns.</p>
+                    <a href="https://arxiv.org/abs/2108.04787" target="_blank" class="text-emerald-600 hover:text-emerald-800 font-semibold inline-flex items-center mt-3">
+                        View Publication (arXiv)
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0l-6 6"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Interests & Fun Fact Integration (Refined and Prominent) -->
+            <div class="text-center mt-12 pt-6 border-t border-gray-300">
+                <h4 class="text-2xl font-bold text-gray-800 mb-4">Beyond the Code: Exploration & Commitment</h4>
+                <p class="text-lg font-medium text-gray-600 max-w-4xl mx-auto">
+                    My dedication to engineering is balanced by a drive for exploration and appreciation of complexity: Reading, Traveling, and exploring Art and Museums.
+                </p>
+                <!-- Fun Fact Block -->
+                <div class="mt-4 p-4 bg-emerald-100 rounded-xl shadow-inner inline-block max-w-lg">
+                     <p class="text-lg font-medium text-emerald-700">
+                        Fun Fact: I hold a Guinness World Record participation certificate, highlighting my commitment to teamwork and achieving large-scale, ambitious goals!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 header-bg text-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-3xl font-bold mb-4">Let's Connect</h3>
+            <p class="text-lg mb-6">I am actively exploring Data Engineer, Software Engineer, and Machine Learning Engineer opportunities, focusing on scalable systems and data architecture.</p>
+            <a href="mailto:laharik36@outlook.com" class="inline-block bg-white text-emerald-700 py-3 px-8 rounded-lg font-semibold hover:bg-gray-200 transition duration-300 shadow-xl">
+                Email Me Directly
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-4 text-center text-gray-400 text-xs">
+        <p>&copy; 2024 Lahari Karadla | Engineered with Java & Hosted with GitHub Pages</p>
+    </footer>
+
+</body>
+</html>
